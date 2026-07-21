@@ -285,11 +285,11 @@
                                         <visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
                                     </item>
                                     <item>
-                                        <label>p3i</label>
+                                        <label>avdvplus/p3i</label>
                                         <label2>skin.arctic.fuse.2</label2>
                                         <icon>special://skin/extras/icons/configure.png</icon>
                                         <onclick>SetProperty(CustomDialogSettingsItems,Items_Settings_p3i,Home)</onclick>
-                                        <onclick>SetProperty(CustomDialogSettingsTitle,p3i,Home)</onclick>
+                                        <onclick>SetProperty(CustomDialogSettingsTitle,avdvplus/p3i,Home)</onclick>
                                         <onclick>ActivateWindow(1127)</onclick>
                                         <visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
                                     </item>
