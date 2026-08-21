@@ -1166,6 +1166,8 @@
     </variable>
 	
     <variable name="Label_ListItem_AudioCodec">
+        <value condition="String.Contains(ListItem.FileNameAndPath,atmos)">Dolby Atmos</value>
+        <value condition="String.Contains(ListItem.FileNameAndPath,dtsx) | String.Contains(ListItem.FileNameAndPath,dts-x) | String.Contains(ListItem.FileNameAndPath,dts:x)">DTS:X</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,aac)">AAC</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,aac_latm)">AAC</value>
         <value condition="String.IsEqual(ListItem.AudioCodec,aac_lc)">AAC</value>
