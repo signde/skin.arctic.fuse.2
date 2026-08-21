@@ -7,9 +7,9 @@
                 <visible>!String.IsEmpty(Player.Process(video.source.hdr.type.raw)) + !String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                 <top>35</top>
                 <width>210</width>
-                <height>170</height>
+                <height>180</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -18,7 +18,7 @@
                 <width>210</width>
                 <height>90</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -27,7 +27,7 @@
                 <width>210</width>
                 <height>90</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -300,6 +300,7 @@
                     <texture colordiffuse="dialog_fg_90">codecs/OPUS.png</texture>
                 </control>
             </control>
+            <include>DolbyVisionLayerPill</include>
         </control>
     </include>
 
@@ -313,9 +314,9 @@
                 <visible>!String.IsEmpty(Player.Process(video.source.hdr.type.raw)) + !String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                 <top>35</top>
                 <width>210</width>
-                <height>170</height>
+                <height>180</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -324,7 +325,7 @@
                 <width>210</width>
                 <height>90</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -333,7 +334,7 @@
                 <width>210</width>
                 <height>90</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -606,6 +607,7 @@
                     <texture colordiffuse="dialog_fg_90">codecs/OPUS.png</texture>
                 </control>
             </control>
+            <include>DolbyVisionLayerPill</include>
         </control>
     </include>
 
@@ -616,9 +618,9 @@
                 <visible>!String.IsEmpty(Player.Process(video.source.hdr.type.raw)) + !String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                 <top>35</top>
                 <width>210</width>
-                <height>170</height>
+                <height>180</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -627,7 +629,7 @@
                 <width>210</width>
                 <height>90</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -636,7 +638,7 @@
                 <width>210</width>
                 <height>90</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -909,6 +911,7 @@
                     <texture colordiffuse="dialog_fg_90">codecs/OPUS.png</texture>
                 </control>
             </control>
+            <include>DolbyVisionLayerPill</include>
         </control>
     </include>
 
@@ -922,9 +925,9 @@
                 <visible>!String.IsEmpty(Player.Process(video.source.hdr.type.raw)) + !String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                 <top>35</top>
                 <width>210</width>
-                <height>170</height>
+                <height>180</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -933,7 +936,7 @@
                 <width>210</width>
                 <height>90</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -942,7 +945,7 @@
                 <width>210</width>
                 <height>90</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1215,6 +1218,7 @@
                     <texture colordiffuse="dialog_fg_90">codecs/OPUS.png</texture>
                 </control>
             </control>
+            <include>DolbyVisionLayerPill</include>
         </control>
     </include>
 
@@ -1225,9 +1229,9 @@
                 <visible>!String.IsEmpty(Player.Process(video.source.hdr.type.raw)) + !String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                 <top>35</top>
                 <width>210</width>
-                <height>170</height>
+                <height>180</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1236,7 +1240,7 @@
                 <width>210</width>
                 <height>90</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1245,7 +1249,7 @@
                 <width>210</width>
                 <height>90</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1518,6 +1522,7 @@
                     <texture colordiffuse="dialog_fg_90">codecs/OPUS.png</texture>
                 </control>
             </control>
+            <include>DolbyVisionLayerPill</include>
         </control>
     </include>
 
@@ -1531,9 +1536,9 @@
                 <visible>!String.IsEmpty(Player.Process(video.source.hdr.type.raw)) + !String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                 <top>35</top>
                 <width>210</width>
-                <height>170</height>
+                <height>180</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1542,7 +1547,7 @@
                 <width>210</width>
                 <height>90</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1551,7 +1556,7 @@
                 <width>210</width>
                 <height>90</height>
                 <control type="image">
-                    <texture colordiffuse="80FFFFFF">common/corner_small.png</texture>
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1824,6 +1829,7 @@
                     <texture colordiffuse="dialog_fg_90">codecs/OPUS.png</texture>
                 </control>
             </control>
+            <include>DolbyVisionLayerPill</include>
         </control>
     </include>
 
@@ -1833,15 +1839,34 @@
         <param name="visible" />
         <param name="texture" />
         <param name="colordiffuse" />
+        <param name="pillVisible" />
         <definition>
             <control type="group" id="$PARAM[groupId]">
                 <control type="image" id="$PARAM[imageId]">
                     <top>35</top>
                     <width>210</width>
-                    <height>170</height>
+                    <height>180</height>
                     <visible>$PARAM[visible]</visible>
-                    <texture>$PARAM[texture]</texture>
+                    <texture border="20">$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
+                </control>
+                <control type="image" id="146">
+                    <visible>$PARAM[pillVisible] + String.Contains(Player.Process(video.dovi.el.type),full)</visible>
+                    <depth>0.45</depth>
+                    <left>82</left><top>199</top><width>45</width><height>7</height>
+                    <texture colordiffuse="FF81C784">common/ppi-pill.png</texture>
+                </control>
+                <control type="image" id="147">
+                    <visible>$PARAM[pillVisible] + String.Contains(Player.Process(video.dovi.el.type),minimum)</visible>
+                    <depth>0.45</depth>
+                    <left>82</left><top>199</top><width>45</width><height>7</height>
+                    <texture colordiffuse="FFFFB74D">common/ppi-pill.png</texture>
+                </control>
+                <control type="image" id="148">
+                    <visible>$PARAM[pillVisible] + !String.Contains(Player.Process(video.dovi.el.type),full) + !String.Contains(Player.Process(video.dovi.el.type),minimum)</visible>
+                    <depth>0.45</depth>
+                    <left>82</left><top>199</top><width>45</width><height>7</height>
+                    <texture colordiffuse="4DFFFFFF">common/ppi-pill.png</texture>
                 </control>
             </control>
         </definition>
@@ -1853,6 +1878,7 @@
         <param name="visible" />
         <param name="texture" />
         <param name="colordiffuse" />
+        <param name="pillVisible" />
         <definition>
             <control type="group" id="$PARAM[groupId]">
                 <control type="image" id="$PARAM[imageId]">
@@ -1860,8 +1886,26 @@
                     <width>210</width>
                     <height>90</height>
                     <visible>$PARAM[visible]</visible>
-                    <texture>$PARAM[texture]</texture>
+                    <texture border="20">$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
+                </control>
+                <control type="image" id="146">
+                    <visible>$PARAM[pillVisible] + String.Contains(Player.Process(video.dovi.el.type),full)</visible>
+                    <depth>0.45</depth>
+                    <left>82</left><top>112</top><width>45</width><height>7</height>
+                    <texture colordiffuse="FF81C784">common/ppi-pill.png</texture>
+                </control>
+                <control type="image" id="147">
+                    <visible>$PARAM[pillVisible] + String.Contains(Player.Process(video.dovi.el.type),minimum)</visible>
+                    <depth>0.45</depth>
+                    <left>82</left><top>112</top><width>45</width><height>7</height>
+                    <texture colordiffuse="FFFFB74D">common/ppi-pill.png</texture>
+                </control>
+                <control type="image" id="148">
+                    <visible>$PARAM[pillVisible] + !String.Contains(Player.Process(video.dovi.el.type),full) + !String.Contains(Player.Process(video.dovi.el.type),minimum)</visible>
+                    <depth>0.45</depth>
+                    <left>82</left><top>112</top><width>45</width><height>7</height>
+                    <texture colordiffuse="4DFFFFFF">common/ppi-pill.png</texture>
                 </control>
             </control>
         </definition>

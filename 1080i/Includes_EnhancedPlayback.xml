@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <!-- TinyPPI-derived channel-layout artwork used by Player Process Info. -->
+    <variable name="PPIChannelLayoutTexture">
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,6) + [String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos) | String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)]">channels/ppi/5.1.2.png</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,8) + [String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos) | String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)]">channels/ppi/7.1.2.png</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,1)">channels/ppi/1.0.png</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,2)">channels/ppi/2.0.png</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,3)">channels/ppi/2.1.png</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,4)">channels/ppi/3.1.png</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,5)">channels/ppi/4.1.png</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,6)">channels/ppi/5.1.png</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,7)">channels/ppi/6.1.png</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,8)">channels/ppi/7.1.png</value>
+    </variable>
+
+    <!-- Keep the layout clear of right-positioned codec logos. -->
+    <include name="PPIChannelLayout">
+        <include content="PPIChannelLayoutPanel" condition="!Skin.HasSetting(ppi.userightCodecLogos)">
+            <param name="left">1485</param>
+        </include>
+        <include content="PPIChannelLayoutPanel" condition="Skin.HasSetting(ppi.userightCodecLogos)">
+            <param name="left">1240</param>
+        </include>
+    </include>
+
+    <include name="PPIChannelLayoutPanel">
+        <definition>
+            <control type="group">
+                <visible>!Skin.HasSetting(ppi.hideChannelLayout)</visible>
+                <visible>Integer.IsEqual(VideoPlayer.AudioChannels,1) | Integer.IsEqual(VideoPlayer.AudioChannels,2) | Integer.IsEqual(VideoPlayer.AudioChannels,3) | Integer.IsEqual(VideoPlayer.AudioChannels,4) | Integer.IsEqual(VideoPlayer.AudioChannels,5) | Integer.IsEqual(VideoPlayer.AudioChannels,6) | Integer.IsEqual(VideoPlayer.AudioChannels,7) | Integer.IsEqual(VideoPlayer.AudioChannels,8)</visible>
+                <left>$PARAM[left]</left>
+                <top>35</top>
+                <width>400</width>
+                <height>265</height>
+                <control type="image">
+                    <texture colordiffuse="FA15191A" border="20">common/dialog.png</texture>
+                </control>
+                <control type="image">
+                    <top>12</top>
+                    <width>400</width>
+                    <height>241</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="dialog_fg_30">channels/ppi/layer.png</texture>
+                </control>
+                <control type="image">
+                    <top>12</top>
+                    <width>400</width>
+                    <height>241</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="dialog_fg_90">$VAR[PPIChannelLayoutTexture]</texture>
+                </control>
+            </control>
+        </definition>
+    </include>
+
+    <!-- FEL/MEL/other-DV indicator shown at the bottom of the codec badge. -->
+    <include name="DolbyVisionLayerPill">
+        <!-- Audio metadata can arrive after VideoFullScreen.xml is loaded.
+             Runtime visibility lets the pill move when the audio logo appears. -->
+        <control type="group">
+            <visible>!String.IsEmpty(VideoPlayer.AudioCodec)</visible>
+            <include content="DolbyVisionLayerPillAt">
+                <param name="top">199</param>
+            </include>
+        </control>
+        <control type="group">
+            <visible>String.IsEmpty(VideoPlayer.AudioCodec)</visible>
+            <include content="DolbyVisionLayerPillAt">
+                <param name="top">112</param>
+            </include>
+        </control>
+    </include>
+
+    <include name="DolbyVisionLayerPillAt">
+        <definition>
+            <control type="group">
+                <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw),3) | String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)</visible>
+                <left>82</left>
+                <top>$PARAM[top]</top>
+                <width>45</width>
+                <height>7</height>
+                <control type="image">
+                    <visible>String.Contains(Player.Process(video.dovi.el.type),full)</visible>
+                    <texture colordiffuse="FF81C784">common/ppi-pill.png</texture>
+                </control>
+                <control type="image">
+                    <visible>String.Contains(Player.Process(video.dovi.el.type),minimum)</visible>
+                    <texture colordiffuse="FFFFB74D">common/ppi-pill.png</texture>
+                </control>
+                <control type="image">
+                    <visible>!String.Contains(Player.Process(video.dovi.el.type),full) + !String.Contains(Player.Process(video.dovi.el.type),minimum)</visible>
+                    <texture colordiffuse="4DFFFFFF">common/ppi-pill.png</texture>
+                </control>
+            </control>
+        </definition>
+    </include>
+</includes>

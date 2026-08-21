@@ -62,6 +62,7 @@
     <include file="Includes_Recommendations.xml" />
     <include file="Includes_Paths.xml" />
     <include file="Includes_CodecLogos.xml"/>
+    <include file="Includes_EnhancedPlayback.xml"/>
     <include file="Includes_PPI_Classic.xml"/>
     <include file="Includes_PPI_Modern.xml"/>
 
