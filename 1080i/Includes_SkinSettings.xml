@@ -354,6 +354,17 @@
             <onclick>Skin.ToggleSetting(Furniture.DisableStudio)</onclick>
             <visible>!Skin.HasSetting(Furniture.EnableClock)</visible>
         </include>
+        <include content="Settings_Button" description="Media flags">
+            <param name="dialog">false</param>
+            <param name="window">skinsettings</param>
+            <param name="baseid">$PARAM[baseid]</param>
+            <param name="id">011</param>
+            <param name="control">radiobutton</param>
+            <label>$LOCALIZE[31207]</label>
+            <selected>Skin.HasSetting(Footer.EnableCodecs)</selected>
+            <onclick>Skin.ToggleSetting(Footer.EnableCodecs)</onclick>
+            <visible>!Skin.HasSetting(Furniture.EnableClock)</visible>
+        </include>
         <include content="Settings_Button" description="Now Playing">
             <param name="dialog">false</param>
             <param name="window">skinsettings</param>
