@@ -48,7 +48,8 @@
                         <visible>$PARAM[visible]</visible>
                         <control type="group">
                             <visible>!Player.HasMedia | !Skin.HasSetting(Furniture.EnableNowPlaying) | $EXP[Exp_PlainBackgroundWindows]</visible>
-                            <include condition="!Skin.HasSetting(Furniture.EnableClock) + !Skin.HasSetting(Furniture.DisableStudio)">Info_Bottom_Right</include>
+                            <include condition="!Skin.HasSetting(Furniture.EnableClock) + !Skin.HasSetting(Footer.EnableCodecs) + !Skin.HasSetting(Furniture.DisableStudio)">Info_Bottom_Right</include>
+                            <include condition="!Skin.HasSetting(Furniture.EnableClock) + Skin.HasSetting(Footer.EnableCodecs) + !$EXP[Exp_View_520]">Info_Bottom_Right_Codecs</include>
                         </control>
                         <control type="group">
                             <visible>!Player.HasMedia | !Skin.HasSetting(Furniture.EnableNowPlaying) | $EXP[Exp_PlainBackgroundWindows]</visible>
